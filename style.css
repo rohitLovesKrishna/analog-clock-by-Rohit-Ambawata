@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap'); 
+/*fonts imported from google fonts*/
+*{box-sizing: border-box;}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+   background-image: url("leaves.jpg");
+}
+h1{
+    font-family:Covered By Your Grace;
+    font-size: 50px;
+    position: relative;
+    bottom: 20vh;
+    transition: all 5s;
+}
+.developer{
+    position: absolute;
+    bottom: 66vh;
+}
+h2{
+     position: absolute;
+    bottom: -9vh;
+    font-size: 80px;
+    font-family: Covered By Your Grace;
+}
+.circle{
+    width: 20vw;
+    height: 40vh;
+    border-radius: 100%;
+/*    box-shadow: 40px 30px 90px 50px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color:white;
+    border:7px solid black;
+}
+.blackSpot{
+    width: 9%;
+    height: 9%;
+    background-color: black;
+    border-radius: 100%;
+    z-index: 1;
+}
+.twelve, .three, .six, .nine{
+    font-family: "Times Roman", sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+}
+.twelve{
+   position: absolute;
+    top:2px;
+}
+.three{
+   position: absolute;
+    right:2px;
+} 
+.six{
+   position: absolute;
+    bottom:2px;
+}
+.nine{
+   position: absolute;
+    left:2px;
+}
+.hour, .second, .minute{
+    position: absolute;
+    transform-origin:bottom;
+    border-radius: 10px;
+    width:5px;
+/*    to move the tick  from bottom (transform-origin:bottom by default it moves from middle)*/
+}
+.hour{
+    height: 11vh;
+    border:3px groove black;
+    top:4.4vw;
+    left:9vw;
+    background-color:black;
+    width:10px;
+}
+
+.minute{
+     height: 15vh;
+border:1px solid black;
+    background-color:black;
+     top:2.1vw;
+    width:10px;
+}
+.second{
+    height: 12vh;
+        background-color:crimson;
+    top: 3.5vw;
+}
+@media(max-width:1000px){
+    .circle{
+        width:50vw;
+    }
+    .second{
+        top:12vw;
+    }
+    .minute{
+        top:6vw;
+    }
+    .hour{
+        top:10vw;
+    }
+}
